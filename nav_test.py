@@ -1,7 +1,7 @@
-import RPi.GPIO as GPIO
+
 
 try:
-    import RPi.GPIO as GPIO
+    from RPi import GPIO
 except RuntimeError:
     print("Error importing RPi.GPIO! Run with 'sudo python3 nav_test.py'")
     exit(1)
